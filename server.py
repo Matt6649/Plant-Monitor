@@ -4,7 +4,7 @@ from time import ctime, sleep
 import Adafruit_ADS1x15
 
 app = Flask(__name__)
-api = Api(Flask(__name__))
+api = Api(app)
 
 class Data(Resource):
     def get(self):
